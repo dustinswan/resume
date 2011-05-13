@@ -1,0 +1,40 @@
+* { margin: 0; padding: 0; }
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    margin: 10px;
+}
+a { text-decoration: none; color: #000; }
+a:hover { background-color: #ecc; }
+ul { list-style-type: none; }
+li:before { content: "- "; }
+#name {
+    text-align: center;
+    font-size: 25px;
+}
+#contact_info {
+    text-align: center;
+    padding: 3px;
+}
+.heading1 {
+    color: #000;
+    font-size: 20px;
+    padding: 1px 10px;
+    margin: -3px -10px 2px;
+    border-bottom: 1px solid #000;
+}
+.heading2 { float: left; text-decoration: underline; padding: 0px; } 
+.section { padding: 10px 20px; }
+.when { float: right; }
+.location { float: left; }
+.location:before { content: ", "; }
+ul, li, .position { clear: both; }
+.position { font-style: italic; }
+.left_box {
+    float: left;
+}
+.right_box {
+    margin-left: 160px;
+}
+.list_left { display: inline; }
+.job { padding-bottom: 10px; }
