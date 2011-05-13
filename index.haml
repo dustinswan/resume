@@ -1,113 +1,118 @@
 !!! 5
-  %html
-    %head
-      %title Dustin Swan - R&eacute;sum&eacute;
-      %link{"rel"="stylesheet/less", "type"="text/css", "href"="style.less"}
-      <script type="text/javascript" src="/include/less.js"></script>
-    %body
+%html
+  %head
+    %title Dustin Swan - R&eacute;sum&eacute;
 
-        <div id="name"><a href="http://www.dustinswan.org">Dustin Swan</a></div>
-        <div id="contact_info">4745 N Ravenswood Ave, Apt 210 | Chicago, IL 60640 | 312.608.2957 | <a href="mailto:dustinswan@gmail.com">dustinswan@gmail.com</a></div>
+    / Blueprint
+    <link rel='stylesheet' href='/include/blueprint/screen.css' type='text/css' media='screen, projection'> 
+    <link rel='stylesheet' href='/include/blueprint/print.css' type='text/css' media='print'> 
+    <!--[if lt IE 8]>
+    <link rel='stylesheet' href='/include/blueprint/ie.css' type='text/css' media='screen, projection'>
+    <![endif]-->
 
-        <div class="section">
-            <div class="heading1">Objective</div>
-            <p>To obtain a position that utilizes my engineering education and interests in the fields of computer science and mathematics.</p>
-        </div>
+    / Less CSS
+    %link(rel="stylesheet/less" type="text/css" href="style.less")
 
-        <div class="section">
-            <div class="heading1">Education</div>
-            <div class="heading2"><a href="http://www.uic.edu">University of Illinois at Chicago (UIC)</a></div>
-            <div class="when">May 2007</div>
-            <ul>
-                <li>Bachelor of Science in Bioengineering</li>
-                <li>Minors: Mathematics and Computer Science</li>
-                <li>Major GPA: 3.4 / 4 &nbsp;&nbsp;&nbsp;&nbsp; Overall GPA: 3.2 / 4</li>
-            </ul>
-        </div>
+    %script(type="text/javascript" src="/include/less.js")
 
-        <div class="section">
-            <div class="heading1">Coursework</div>
-            <div class="left_box">
-                <ul>
-                    <li><div class="list_left">Mathematics</div></li>
-                    <li><div class="list_left">Computer Science</div></li>
-                    <li><div class="list_left">Electronics</div></li>
-                    <li><div class="list_left">Biology</div></li>
-                </ul>
-            </div>
-            <div class="right_box">
-                <div class="list_right">Calculus I - IV, Differential Equations, Linear Algebra</div>
-                <div class="list_right">C++, FORTRAN, Java, Visual Basic, Algorithms, Languages and Automata, Data Structures I, II</div>
-                <div class="list_right">Pattern Recognition, Signal Analysis, Discrete Continuous Signals and Systems</div>
-                <div class="list_right">Modeling Physiological Data and Systems, Bioinformatics, Biostatistics, Bioinstrumentation, Genetics, Biomaterials</div>
-            </div>
-        </div>
+  %body
 
-        <div class="section">
-            <div class="heading1">Technical Skills</div>
-            <div class="left_box">
-                <ul>
-                    <li><div class="list_left">Languages</div></li>
-                    <li><div class="list_left">Frameworks / Libraries</div></li>
-                    <li><div class="list_left">Systems</div></li>
-                    <li><div class="list_left">Software / Tools</div></li>
-                </ul>
-            </div>
-            <div class="right_box">
-                <div class="list_right">PHP, JavaScript, XML, HTML, CSS, SQL</div>
-                <div class="list_right">CakePHP, Code Igniter, JQuery, AJAX, Drupal</div>
-                <div class="list_right">Linux, *BSD, Mac OS X, Microsoft Windows</div>
-                <div class="list_right">Microsoft Office (Word, Excel, PowerPoint), Open Office, MATLAB, MySQL</div>
-            </div>
-        </div>
+    #name
+      %a(href="http://www.dustinswan.org") Dustin Swan
 
-        <div class="section">
-            <div class="heading1">Work Experience</div>
+    #contact_info
+      4745 N Ravenswood Ave, Apt 210 | Chicago, IL 60640 | 312.608.2957 | 
+      %a(href="mailto:dustinswan@gmail.com") dustinswan@gmail.com
 
-            <div class="job">
-                <div class="heading2"><a href="http://www.iocom.com">IOCOM Integrated Communications</a></div>
-                <div class="location">Chicago, IL</div>
-                <div class="when">2009 - 2010</div>
-                <div class="position">Web Application Developer</div>
-                <ul>
-                    <li>Developed and maintained the video conferencing web application.</li>
-                    <li>Designed and developed server management and configuration scripts and web front-ends.</li>
-                    <li>Designed user and customer portal.</li>
-                </ul>
-            </div>
+    .section
+      %h1 Objective
+      %p To obtain a position that utilizes my engineering education and interests in the fields of computer science and mathematics.
 
-            <div class="job">
-                <div class="heading2"><a href="http://www.abbott.com/">Abbott Laboratories</a></div>
-                <div class="location">Abbott Park, IL</div>
-                <div class="when">2007 - 2009</div>
-                <div class="position">Validation Engineer</div>
-                <ul>
-                    <li>Managed projects and assembled cross-functional teams to construct change plans and assess product impact.</li>
-                    <li>Authored changes to testing documentation and product design records.</li>
-                    <li>Processed changes to quality system and product documents to comply with medical device regulatory requirements.</li>
-                    <li>Programmed automated testing control procedures using the Laboratory Information Management System (LIMS).</li>
-                </ul>
-            </div>
+    .section
+      %h1 Education
+      %h2
+        %a(href="http://www.uic.edu") University of Illinois at Chicago (UIC)
+      .when May 2007
+      %ul
+        %li Bachelor of Science in Bioengineering
+        %li Minors: Mathematics and Computer Science
+        %li Major GPA: 3.4 / 4 &nbsp;&nbsp;&nbsp;&nbsp; Overall GPA: 3.2 / 4
 
-            <div class="job">
-                <div class="heading2">Hoekstra Heating and Cooling</div>
-                <div class="location">Homewood, IL</div>
-                <div class="when">2003 - 2006</div>
-                <div class="position">Driver and Installation Assistant</div>
-                <ul>
-                    <li>Deliver HVAC equipment from warehouses to job sites.</li>
-                    <li>Assist in the installation of refrigeration lines and equipment.</li>
-                </ul>
-            </div>
-        </div>
+    .section
+      %h1 Coursework
+      %ul
+        %li
+          .category Mathematics 
+          Calculus I - IV, Differential Equations, Linear Algebra
+        %li
+          .category Computer Science
+          C++, FORTRAN, Java, Visual Basic, Algorithms, Languages and Automata, Data Structures I, II
+        %li
+          .category Electronics
+          Pattern Recognition, Signal Analysis, Discrete Continuous Signals and Systems
+        %li
+          .category Biology
+          Modeling Physiological Data and Systems, Bioinformatics, Biostatistics, Bioinstrumentation, Genetics, Biomaterials
 
-        <div class="section">
-            <div class="heading1">Memberships</div>
-            <ul>
-                <li><a href="http://www.acm.org/">Association for Computing Machinery (ACM)</a>, Member<div class="when">2005</div></li>
-                <li><a href="http://www.bmes.org/">Biomedical Engineering Society (BMES)</a>, Member<div class="when">2005</div></li>
-            </ul>
-        </div>
+    .section
+      %h1 Technical Skills
+      %ul
+        %li
+          .category Languages
+          PHP, JavaScript, XML, HTML, CSS, SQL
+        %li
+          .category Frameworks / Libraries
+          CakePHP, Code Igniter, JQuery, AJAX, Drupal
+        %li
+          .category Systems
+          Linux, *BSD, Mac OS X, Microsoft Windows
+        %li
+          .category Software / Tools
+          Microsoft Office (Word, Excel, PowerPoint), Open Office, MATLAB, MySQL
 
-    </body>
-</html>
+    .section
+      %h1 Work Experience
+
+      .job
+        %h2
+          %a(href="http://www.iocom.com") IOCOM Integrated Communications
+        .location Chicago, IL
+        .when 2009 - 2010
+        .position Web Application Developer
+        %ul
+          %li Developed and maintained the video conferencing web application.
+          %li Designed and developed server management and configuration scripts and web front-ends.
+          %li Designed user and customer portal.
+
+      .job
+        %h2
+          %a(href="http://www.abbott.com/") Abbott Laboratories
+        .location Abbott Park, IL
+        .when 2007 - 2009
+        .position Validation Engineer
+        %ul
+          %li Managed projects and assembled cross-functional teams to construct change plans and assess product impact.
+          %li Authored changes to testing documentation and product design records.
+          %li Processed changes to quality system and product documents to comply with medical device regulatory requirements.
+          %li Programmed automated testing control procedures using the Laboratory Information Management System (LIMS).
+
+      .job
+        %h2 Hoekstra Heating and Cooling
+        .location Homewood, IL
+        .when 2003 - 2006
+        .position Driver and Installation Assistant
+        %ul
+          %li Deliver HVAC equipment from warehouses to job sites.
+          %li Assist in the installation of refrigeration lines and equipment.
+
+    .section
+      %h1 Memberships
+      %ul
+        %li
+          %a(href="http://www.acm.org/") Association for Computing Machinery (ACM)
+          , Member
+          .when 2005
+        %li
+          %a(href="http://www.bmes.org/")Biomedical Engineering Society (BMES)
+          , Member 
+          .when 2005
