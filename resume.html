@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Dustin Swan - Resume</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://kit.fontawesome.com/024d65f707.js" crossorigin="anonymous"></script>
+
+		<script>
+		</script>
+
+		<style type="text/tailwindcss">
+			@font-face {
+				font-family: Iosevka;
+				src: url("https://dustinswan.com/iosevka-fixed-regular.woff2") format("woff2");
+			}
+			body {
+				font-family: Iosevka, monospace;
+			}
+			@layer base {
+				.section-title {
+					@apply uppercase font-semibold text-lg border-b-2 mb-4;
+				}
+				.subtitle {
+					@apply uppercase font-bold text-sm my-1;
+				}
+				a {
+					@apply text-cyan-400 hover:text-cyan-200 transition-colors;
+				}
+			}
+		</style>
+	</head>
+
+	<body class="bg-slate-300 h-full">
+		<div class="h-full lg:container lg:mx-auto lg:flex min-h-screen">
+			<section class="p-8 lg:px-12 lg:py-9 bg-slate-100">
+				<h1 class="text-4xl mb-4 uppercase font-bold border-b-2 py-2">Dustin Swan</h1>
+
+				<article class="pb-8">
+					<p class="py-1"><strong>Software Engineer</strong> with over 12 years experience architecting, implementing, and shipping secure, cross-platform applications. Proficient in functional and object-oriented programming paradigms; delivering clean, maintainable code; utilizing modern, standards-based web technologies.
+				</article>
+
+				<article class="pb-8">
+					<h3 class="section-title">Experience</h3>
+					Test
+				</article>
+
+				<article class="pb-8">
+					<h3 class="section-title">Education</h3>
+					<h4 class="text-lg font-bold">Bachelor of Science in Biological Engineering</h4>
+					<i>with minors in Computer Science & Mathematics</i>
+					<div>University of Illinois Chicago (UIC) - 2007</div>
+				</article>
+			</section>
+
+			<section class="p-8 mb-8 lg:mb-0 lg:pt-16 lg:p-12 bg-slate-800 text-slate-100 lg:w-96 shrink-0 lg:order-first">
+				<h3 class="section-title">Contact</h3>
+
+				<ul class="mb-6">
+					<li class="mb-2">
+						<i class="mr-1 fa-solid fa-fw fa-envelope"></i>
+						<a href="mailto:dustin@dustinswan.com">dustin@dustinswan.com</a>
+					</li>
+
+					<li class="mb-2">
+						<i class="mr-1 fa-solid fa-fw fa-map"></i>
+						Upstate NY, USA
+					</li>
+
+					<li class="mb-2">
+						<i class="mr-1 fa-solid fa-fw fa-house"></i>
+						<a href="https://www.dustinswan.com" target="_blank">dustinswan.com</a>
+					</li>
+
+					<li class="mb-2">
+						<i class="mr-1 fa-solid fa-fw fa-ellipsis"></i>
+						<a title="git" class="mr-1" href="https://git.dustinswan.com" target="_blank"><i class="mr-1 fa-brands fa-fw fa-git"></i></a>
+						<a title="LinkedIn" class="mr-1" href="https://www.linkedin.com/in/dustinswan" target="_blank"><i class="mr-1 fa-brands fa-fw fa-linkedin"></i></a>
+						<a title="Twitter" class="mr-1" href="https://twitter.com/dustinswan" target="_blank"><i class="mr-1 fa-brands fa-fw fa-twitter"></i></a>
+						<a title="Mastodon" class="mr-1" href="https://mastodon.social/@dustinswan" target="_blank"><i class="mr-1 fa-brands fa-fw fa-mastodon"></i></a>
+						<a title="PGP" class="mr-1" href="https://pgp.mit.edu/pks/lookup?op=get&search=0xAB49BD6B2B3A6377" target="_blank"><i class="mr-1 fa-solid fa-fw fa-lock"></i></a>
+					</li>
+				</ul>
+
+				<h3 class="section-title">Technologies</h3>
+
+				<h4 class="subtitle text-fuchsia-400">Expert</h4>
+
+				<ul class="mb-6 text-fuchsia-100">
+					<li class="mb-2" title="I started writing JavaScript in ~2008, and have recently (thankfully) made the switch to TypeScript. It's been a long journey! Gone are the days of manually futzing with the Prototype chain..">JavaScript / TypeScript</li>
+					<li class="mb-2">HTML&amp;CSS / WebRTC / WebSockets</li>
+					<li class="mb-2">React / Preact / MobX / RxJS</li>
+				</ul>
+
+				<h4 class="subtitle text-emerald-400">Skilled</h4>
+
+				<ul class="mb-6 text-emerald-100">
+					<li class="mb-2">NodeJS / Deno / Electron</li>
+					<li class="mb-2">NextJS / Zustand / Redux</li>
+					<li class="mb-2">PHP / Laravel / ODBC</li>
+					<li class="mb-2">Postgres / SQLite</li>
+					<li class="mb-2">Jira / Confluence / Trello</li>
+					<li class="mb-2">Git / Perforce / Figma</li>
+				</ul>
+
+				<h4 class="subtitle text-amber-200">Enjoying</h4>
+
+				<ul class="mb-6 text-amber-50">
+					<li class="mb-2">Haskell / PureScript / Elm</li>
+					<li class="mb-2">OCaml / Racket / Rust</li>
+					<li class="mb-2">NixOS / Neovim / Command Line ♡</li>
+				</ul>
+			</section>
+		</div>
+	</body>
+</html>
