@@ -10,10 +10,16 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://kit.fontawesome.com/024d65f707.js" crossorigin="anonymous"></script>
 
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@2.41.0/dist/full.css" type="text/css" />
 		<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Iosevka/6.0.0/iosevka/iosevka.min.css">
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦢</text></svg>">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Iosevka/6.0.0/iosevka/iosevka.min.css"> -->
 
 		<style type="text/tailwindcss">
+      @font-face {
+        font-family: "Iosevka Web";
+        src: url("assets/iosevka-fixed-regular.woff2") format("woff2");
+      }
 			body {
 				font-family: "Fira Sans", sans-serif;
 			}
@@ -26,8 +32,11 @@
 					@apply uppercase font-bold text-sm my-1;
 					font-family: "Iosevka Web";
 				}
-				a {
+				.sidebar a {
 					@apply text-cyan-400 hover:text-cyan-200 transition-colors;
+				}
+				.main a {
+					@apply text-cyan-700 hover:text-cyan-500 transition-colors dark:text-cyan-200 dark:hover:text-cyan-300;
 				}
 				.sidebar ul {
 					@apply mb-6;
@@ -39,6 +48,9 @@
 				.main li {
 					list-style-type: "›  ";
 					@apply mb-1;
+				}
+				span[data-tip] {
+					@apply border-b border-dashed cursor-pointer;
 				}
 			}
 		</style>
@@ -56,9 +68,9 @@
 				<h3 class="section-title">Experience</h3>
 
 				<article class="pb-8">
-					<img src="static/visionable.png" class="w-12 float-left mt-1 mr-4" />
+					<img src="assets/visionable.png" class="w-12 float-left mt-1 mr-4" />
 					<h4 class="text-lg font-bold">Front End &amp; API Lead Software Engineer</h4>
-					<div>Visionable UK Ltd <i>(prev. IOCOM)</i> | 2009 - present</div>
+					<div><a href="https://www.visionable.com" target="_blank">Visionable UK Ltd</a> <i>(prev. IOCOM)</i> | 2009 - present</div>
 
 					<ul class="clear-left m-4 ml-0 lg:ml-16">
 						<li>Designed &amp; developed our flagship responsive, cross-platform JavaScript video conferencing application</li>
@@ -69,9 +81,9 @@
 				</article>
 
 				<article class="pb-8">
-					<img src="static/abbott.png" class="w-12 float-left mr-4" />
+					<img src="assets/abbott.png" class="w-12 float-left mr-4" />
 					<h4 class="text-lg font-bold">Validation Engineer</h4>
-					<div>Abbott Laboratories | 2007 - 2009</div>
+					<div><a href="https://www.abbott.com/" target="_blank">Abbott Laboratories</a> | 2007 - 2009</div>
 
 					<ul class="clear-left m-4 ml-0 lg:ml-16">
 						<li>Managed projects and assembled cross-functional teams to construct change plans and assess product impact</li>
@@ -84,10 +96,10 @@
 				<h3 class="section-title">Education</h3>
 
 				<article class="pb-8">
-					<img src="static/uic.png" class="w-12 float-left mt-2 mr-4" />
+					<img src="assets/uic.png" class="w-12 float-left mt-2 mr-4" />
 					<h4 class="text-lg font-bold">Bachelor of Science in Bioengineering</h4>
 					<i>with minors in Computer Science & Math</i>
-					<div>University of Illinois Chicago (UIC) | 2007</div>
+					<div><a href="https://www.uic.edu/" target="_blank">University of Illinois Chicago (UIC)</a> | 2007</div>
 				</article>
 			</section>
 
@@ -122,29 +134,29 @@
 
 				<h3 class="section-title">Technologies</h3>
 
-				<h4 class="subtitle text-fuchsia-400">Expert</h4>
+				<h4 class="subtitle text-fuchsia-400">Expert in</h4>
 
 				<ul class="text-fuchsia-100">
-					<li title="I started writing JavaScript in ~2008, and have recently (thankfully) made the switch to TypeScript. It's been a long journey! Gone are the days of manually futzing with the Prototype chain..">JavaScript / TypeScript</li>
-					<li>HTML / CSS / WebRTC / WebSockets</li>
-					<li>React / Preact / MobX</li>
+					<li><span class="tooltip tooltip-accent" data-tip="I started writing JavaScript in ~2008, and have recently (thankfully) made the switch to TypeScript. It's been a long journey! Gone are the days of manually futzing with the Prototype chain..">JavaScript</span> / NodeJS / HTML / <span class="tooltip tooltip-accent" data-tip="I ♡ CSS. Flexbox has increased my quality of life in a big way. I've also used a few preprocessors like Sass & Less, and I tried out Tailwind for the first time on this page - I think I like it!">CSS</a></li>
+					<li><span class="tooltip tooltip-accent" data-tip="I built our video conferencing web application using WebRTC. For the first few years it was a constant battle with Browsers changing their APIs every version, but that has mostly settled down. Safari is still awful, of course.">WebRTC</span> / WebSockets / REST / AJAX</li>
+					<li>React / Preact / MobX / MUI</li>
 				</ul>
 
-				<h4 class="subtitle text-emerald-400">Skilled</h4>
+				<h4 class="subtitle text-emerald-400">Skilled in</h4>
 
 				<ul class="text-emerald-100">
-					<li>NodeJS / Deno / Electron</li>
-					<li>NextJS / Zustand / Redux / RxJS</li>
+					<li>TypeScript / Deno / Electron / AWS</li>
+					<li>NextJS / Redux / RxJS / Zustand</li>
 					<li>PHP / ODBC /  Postgres / SQLite</li>
-					<li>Git / Perforce / Jira / Confluence</li>
+					<li>Git / Perforce / Jira / Bugzilla</li>
 				</ul>
 
-				<h4 class="subtitle text-amber-200">Enjoying</h4>
+				<h4 class="subtitle text-amber-200">Excited About</h4>
 
 				<ul class="text-amber-50">
-					<li>Haskell / PureScript / Elm</li>
-					<li>OCaml / Racket / Rust</li>
-					<li>NixOS / Neovim / Command Line ♡</li>
+					<li>Haskell / PureScript / Elm / Unison</li>
+					<li><span class="tooltip tooltip-accent" data-tip="I did Advent of Code 2020 in OCaml (see my Git repo), and it was pretty great.">OCaml</span> / <span class="tooltip tooltip-accent" data-tip="Then I did AoC 2021 in Racket. I didn't find it as easy as OCaml. I think I just need more practice with Lisp">Racket</span> / <span class="tooltip tooltip-accent" data-tip="Currently learning Rust. I'll be doing this year's AoC in it. Wish me luck!">Rust</span> / Wasm</li>
+					<li><span class="tooltip tooltip-accent" data-tip="Huge fan of Nix. I've replaced Homebrew on MacOS with Nix, I run NixOS on my VMs, and I use home-manager to manage my dotfiles. So good!">NixOS</span> / <span class="tooltip tooltip-accent" data-tip="I've been using vi since I was a teenager. I used Emacs for a few years (mostly for Org-mode), but came back to vi when Neovim started getting good.">Neovim</span> / Command Line ♡</li>
 				</ul>
 			</section>
 		</div>
